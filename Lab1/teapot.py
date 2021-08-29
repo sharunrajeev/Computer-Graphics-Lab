@@ -11,8 +11,8 @@ def draw():
  
 glutInit(sys.argv) 
 glutInitDisplayMode(GLUT_SINGLE | GLUT_RGB) 
-glutInitWindowSize(250, 250) 
-glutInitWindowPosition(100, 100) 
+glutInitWindowSize(500, 500) 
+glutInitWindowPosition(200, 100) 
 glutCreateWindow("My Second OGL Program") 
 glutDisplayFunc(draw) 
 glutMainLoop()
