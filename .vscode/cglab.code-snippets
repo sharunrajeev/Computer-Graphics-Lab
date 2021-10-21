@@ -1,0 +1,41 @@
+{
+	// Place your Computer-Graphics-Lab workspace snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and 
+	// description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope 
+	// is left empty or omitted, the snippet gets applied to all languages. The prefix is what is 
+	// used to trigger the snippet and the body will be expanded and inserted. Possible variables are: 
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. 
+	// Placeholders with the same ids are connected.
+	// Example:
+	"cgboilerplate": {
+		"scope": "python",
+		"prefix": "cg",
+		"body": [
+			"from OpenGL.GL import *",
+			"from OpenGL.GLU import *",
+			"from OpenGL.GLUT import *",
+			"import sys",
+			"\n",
+			"def init():",
+			"\tglClearColor(0, 0, 0, 1)",
+			"\tgluOrtho2D(-100, 100, -100, 100)",
+			"\n",
+			"def draw():",
+			"\tglClear(GL_COLOR_BUFFER_BIT)",
+			"\tglColor3f(1, 0, 0)",
+			"\tglFlush()",
+			"\n",
+			"def main():",
+			"\tglutInit(sys.argv)",
+			"\tglutInitDisplayMode(GLUT_SINGLE | GLUT_RGB)",
+			"\tglutInitWindowSize(500, 500)",
+			"\tglutInitWindowPosition(250, 250)",
+			"\tglutCreateWindow('Plot a Point')",
+			"\tglutDisplayFunc(draw)",
+			"\tinit()",
+    		"glutMainLoop()",
+			"\n",
+			"main()"
+		],
+		"description": "Add CG Lab snippet"
+	}
+}
